@@ -1,17 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src='src.js'></script>
-    <title>Document</title>
-</head>
-<body>
-    <h1>
-        Higher Order Functions
-    </h1>
-    <button id="avengers-button">Press me.</button>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Find all the Pokemons</title>
+    <style media="screen">
+      body {
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 300;
+      }
+      #container {
+        width:1000px;
+        margin:auto;
+        margin-top:50px;
+      }
+      #roster {
+        margin-bottom: 10rem
+      }
+      #avengers-logo {
+        width:600px;
+        margin-left:200px;
+      } 
+      .card {
+        margin: 10px;
+        float:left;
+        text-align: center;
+        width:190px;
+        border: solid 1px;
+        padding-bottom: 1rem;
+      }
+      .center-text {
+        text-align: center;
+      }
+      #id-update {
+        width: 10px;
+      }
+      .img{
+        display: block;
+      }
+      .card-img {
+        width: 140px;
+      }
+      #button {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img id="avengers-logo" src="http://www.sclance.com/pngs/avengers-logo-png/avengers_logo_png_71230.png" alt="">
+
+      <div id="roster">
+        <h2>My Roster</h2>
+      </div>
     
-</body>
+      <div id="avengers-container">
+        <h2>Avengers Roster</h2>
+      </div>
+    </div>
+    <!-- <script type="text/javascript" src="demo.js"></script> -->
+    <script type="text/javascript" src="src.js"></script>
+  </body>
 </html>

@@ -1,0 +1,17 @@
+
+
+
+#container {
+    width:1000px;
+    margin:auto;
+    margin-top:50px;
+}
+
+.avengers-group{
+    margin:auto;
+    float:left;
+    text-align: center;
+    width:190px;
+    border: solid 1px;
+    
+}
