@@ -1,5 +1,5 @@
 
-const avengers = [
+let avengers = [
     {
         name: "Iron-Man",
         powerLevel: 500,
@@ -38,17 +38,21 @@ const avengers = [
     }
 ];
 
-const infinitySnap = function(avenger) {
-    if(avenger.isDead == "true"){
-        avenger.isDead = "false"
-    }
+const infinitySnap = function() {
+   avengers.forEach((avenger) => {
+       if (avenger.isDead == true) {
+           avenger.isDead = false   
+       }
+   });
+   console.log(avengers)
 };
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("were in")
     let button = document.getElementById('avengers-button')
     button.addEventListener('click', () => {
-        avengers.forEach(avengers, infinitySnap)
+        console.log('click')
+        infinitySnap()
     });
     
 })
